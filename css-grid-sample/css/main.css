@@ -40,6 +40,23 @@
     "footer footer footer"
 }
 
+@media only screen and (max-width: 600px) {
+.container {
+  grid-template-rows: 100px auto auto 100px;
+  grid-template-areas:
+  "header header header"
+  "main main main"
+  "sidebar sidebar sidebar"
+  "footer footer footer"
+}
+.header {
+  background: pink;
+}
+.footer {
+  display: none;
+}
+}
+
 a {
   color: green;
   text-decoration: none;
