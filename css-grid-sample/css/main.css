@@ -24,6 +24,7 @@
     /* grid-template-rows: repeat(3, 200px); */
     /* grid-column-gap: 10px; */
     /* grid-row-gap: 15px; */
+    /* justify-items: start; */
 
     grid-template-areas:
     "header header header"
