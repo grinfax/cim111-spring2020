@@ -1,0 +1,25 @@
+.hero {
+  height: 300px;
+  width: 100%;
+  text-align: center;
+  font-size: 100px;
+}
+
+.bg-orange {
+  background: orange;
+}
+.dashed {
+  border: 5px dashed black;
+}
+
+.bg-green {
+  background: green;
+}
+
+.hero p {
+  font-size: 30px;
+}
+
+p {
+  font-size: 10px;
+}
