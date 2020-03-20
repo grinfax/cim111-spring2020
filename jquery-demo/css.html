@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JQuery CSSDemo</title>
+        <!-- import JQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <p>
+            This example will show you how to change the style of an element dymamically. 
+        </p>
+        <p>
+       <div class="demobox">
+           This has a class of "demobox"
+       </div>
+        </p>
+        <p>
+            <button id="myButt">Click me!</button>
+        </p>
+        <!-- Your JQuery goes here, the "script" element s usually places before the /body tag -->
+        <script type="text/javascript">
+            $(document).ready(function(){
+                  //all js goes in here
+                  //the code below adds the background color style to the div with the class demobox on mousedown
+                  $( "#myButt" ).mousedown(function() {
+                        $(".demobox").css("background-color", "pink");
+                    });
+                    //the code below adds the background color style to the div with the class demobox on mouseup
+                    $("#myButt").mouseup(function(){
+                        $(".demobox").css("background-color", "aqua");
+                    });
+        
+                });
+        </script>
+
+    </body>
+</html>
