@@ -9,10 +9,10 @@
     </head>
     <body>
         <p>
-            This example will show you how to change the style of an element dymamically.
+            This example will show you how to create a toggle button to show hide.
         </p>
         <p>
-       <div class="demobox">
+       <div class="demobox" id="bob">
            This has a class of "demobox"
        </div>
         </p>
@@ -26,13 +26,9 @@
         <script type="text/javascript">
             $(document).ready(function(){
                   //all js goes in here
-                  //the code below adds the background color style to the div with the class demobox on mousedown
-                  $( "#myButt" ).mousedown(function() {
-                        $(".demobox").css("background-color", "pink");
-                    });
-                    //the code below adds the background color style to the div with the class demobox on mouseup
-                    $("#myButt").mouseup(function(){
-                        $(".demobox").css("background-color", "aqua");
+                  //the code below toggles between show hide
+                  $( "#myButt" ).click(function() {
+                        $("#bob").toggleClass("tealCircle demobox");
                     });
 
                 });

@@ -9,11 +9,11 @@
     </head>
     <body>
         <p>
-            This example will show you how to change the style of an element dymamically.
+            This example will show you how to change the content of an element.
         </p>
         <p>
        <div class="demobox">
-           This has a class of "demobox"
+           This box has a class of "demobox". Clicking the button below will replace this text.
        </div>
         </p>
         <p>
@@ -27,12 +27,8 @@
             $(document).ready(function(){
                   //all js goes in here
                   //the code below adds the background color style to the div with the class demobox on mousedown
-                  $( "#myButt" ).mousedown(function() {
-                        $(".demobox").css("background-color", "pink");
-                    });
-                    //the code below adds the background color style to the div with the class demobox on mouseup
-                    $("#myButt").mouseup(function(){
-                        $(".demobox").css("background-color", "aqua");
+                  $( "#myButt" ).click(function() {
+                        $(".demobox").html("<p>Text replaced. You can put anything here.</p>");
                     });
 
                 });

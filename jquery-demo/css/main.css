@@ -1,7 +1,7 @@
 .demobox {
     background: aqua;
     border: 1px black dashed;
-    margin: 20px; 
+    margin: 20px;
     padding: 30px;
     width: 30%;
     /* the transition property animates when you add a class */
@@ -9,22 +9,22 @@
 }
 
 #myButt {
-    margin: 20px; 
+    margin: 20px;
 }
 
 
 /* These are the classes used for the add class html page */
 
 .chubbySquare {
-    width: 200px; 
-    height: 200px; 
+    width: 200px;
+    height: 200px;
     background: orange;
     border-radius: 5;
 }
 
 .tealCircle {
-    width: 200px; 
-    height: 200px; 
+    width: 200px;
+    height: 200px;
     background: teal;
     border-radius: 50%;
 }

@@ -9,19 +9,14 @@
     </head>
     <body>
         <p>
-            This example will show you how to add a class to an element dymamically.
+            This example will show you how to fadeout and fadein and element.
         </p>
         <p>
-       <div class="demobox">
-           This has a class of "demobox"
-       </div>
+       <img src="images/ducky.jpg" alt="Robber Ducky" id="ducky" width="300">
         </p>
         <p>
-            <button id="makeChubby">Make Chubby!</button>
-            <button id="makeCircle">Make Circle!</button>
-        </p>
-        <p>
-          Check out removeclass to remove a class: <a href="https://github.com/UMInteractive/Weblab/blob/master/notes/6-Javascript.md" target="_top">removeClass()</a>
+            <button id="hideDucky">Hide Ducky!</button>
+            <button id="showDucky">Show Ducky!</button>
         </p>
         <p>
           <a href="index.html"><- back</a>
@@ -31,12 +26,12 @@
             $(document).ready(function(){
                   //all js goes in here
                   //the code below adds the class chubbySquare to the demo box
-                  $( "#makeChubby" ).click(function() {
-                        $(".demobox").addClass("chubbySquare");
+                  $( "#hideDucky" ).click(function() {
+                        $("#ducky").fadeOut(1000);
                     });
                     //the code below adds the class tealCircle to the demo box
-                    $("#makeCircle").mouseup(function(){
-                        $(".demobox").addClass("tealCircle");
+                    $("#showDucky").mouseup(function(){
+                        $("#ducky").fadeIn(1000);
                     });
 
                 });
