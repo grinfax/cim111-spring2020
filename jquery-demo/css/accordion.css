@@ -1,0 +1,45 @@
+
+body {
+  font: 16px Sans-Serif;
+}
+
+.accordion {
+  margin: 50px;
+}
+.accordion h2,
+.accordion p {
+  padding: 10px;
+  border: 1px solid black;
+  border-bottom: 0;
+}
+.accordion h2:last-of-type,
+.accordion p:last-of-type {
+  border-bottom: 1px solid black;
+}
+.accordion h2 a,
+.accordion p a {
+  display: block;
+  color: black;
+  font-weight: bold;
+}
+
+.accordion h2 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.accordion p {
+  border-top: 0;
+  font-size: 12px;
+  background: #efefef;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.accordion p:last-of-type {
+  border-top: 1px solid white;
+  position: relative;
+  top: -1px;
+}
+
+a {
+  text-decoration: none;
+}

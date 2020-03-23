@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Acordion Example</title>
+  </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/accordion.css">
+  <body>
+<p>
+Jquery Accordion Example</p>
+
+    <div class="accordion">
+
+    <h2><a href="">Panel A</a></h2>
+    <p>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</p>
+
+    <h2><a href="">Panel B</a></h2>
+    <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+
+    <h2><a href="">Panel C</a></h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</p>
+    </div>
+
+    <p>
+      <a href="index.html"><- back</a>
+    </p>
+    <script type="text/javascript">
+        $(document).ready(function(){
+          var allPanels = $('.accordion > p').hide();
+
+          $('.accordion > h2 > a').click(function() {
+            allPanels.slideUp();
+            $(this).parent().next().slideDown();
+            return false;
+          });
+
+            });
+    </script>
+  </body>
+</html>

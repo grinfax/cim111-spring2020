@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Slideshow</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/slideshow.css">
+  </head>
+  <body>
+
+
+    <div id="slideshow">
+   <div>
+     <img src="images/1.jpg">
+   </div>
+   <div>
+     <img src="images/2.jpg">
+   </div>
+   <div>
+     <img src="images/3.jpg">
+   </div>
+   <div>
+     Add some content if you prefer
+   </div>
+</div>
+
+<p>
+  <a href="index.html"><- back</a>
+</p>
+<script type="text/javascript">
+    $(document).ready(function(){
+        //hide all divs except the first
+      $("#slideshow > div:gt(0)").hide();
+
+      //next slide
+      setInterval(function() {
+        $('#slideshow > div:first')
+          .fadeOut(1000)
+          .next()
+          .fadeIn(1000)
+          .end()
+          .appendTo('#slideshow');
+          //3000 milliseconds
+      },  3000);
+
+        });
+</script>
+
+
+  </body>
+</html>
