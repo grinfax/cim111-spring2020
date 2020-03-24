@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Demo for JQuery
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="demobox">
+            Hello World
+        </div>
+        <button id="myButt">Click me!</button>
+
+
+        <script type="text/javascript">
+            //javascript code
+            $(document).ready(function() {
+                $("#myButt").mousedown(function(){
+                    $(".demobox").css("background-color", "pink");
+                })
+
+                $("#myButt").mouseup(function(){
+                    $(".demobox").css("background-color", "green");
+                })
+            })
+        </script>
+    </body>
+</html>
