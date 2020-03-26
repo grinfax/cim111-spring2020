@@ -1,3 +1,8 @@
+img {
+    max-width: 100%;
+}
+
+   
    #thumb_1 {
     grid-area: t1;    
    }
@@ -18,6 +23,12 @@
    }
    #photo {
        grid-area: photo;
+   }
+
+   .thumbnail {
+       width: 100px;
+       padding: 5px;
+       text-align: center;
    }
 
 .gallery {
