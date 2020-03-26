@@ -25,6 +25,11 @@ img {
        grid-area: photo;
    }
 
+   #caption {
+    grid-area: caption;
+    padding: 10px;
+   }
+
    .thumbnail {
        width: 100px;
        padding: 5px;
@@ -41,5 +46,6 @@ img {
     background: pink;
     grid-template-areas: 
     "photo photo photo photo photo photo"
+    "caption caption caption caption caption caption"
     "t1 t2 t3 t4 t5 t6";
 }
