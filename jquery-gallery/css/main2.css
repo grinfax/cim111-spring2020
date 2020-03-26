@@ -1,0 +1,34 @@
+   #thumb_1 {
+    grid-area: t1;    
+   }
+   #thumb_2 {
+    grid-area: t2;    
+   }
+   #thumb_3 {
+    grid-area: t3;    
+   }
+   #thumb_4 {
+    grid-area: t4;    
+   }
+   #thumb_5 {
+    grid-area: t5;    
+   }
+   #thumb_6 {
+    grid-area: t6;    
+   }
+   #photo {
+       grid-area: photo;
+   }
+
+.gallery {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    align-items: center;
+    width: 800px;
+    margin: auto;
+    background: pink;
+    grid-template-areas: 
+    "photo photo photo photo photo photo"
+    "t1 t2 t3 t4 t5 t6";
+}
