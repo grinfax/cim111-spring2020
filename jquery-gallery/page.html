@@ -7,7 +7,7 @@
     </head>
     <body>
         <main class="gallery">
-            <div id="photo"><img src="img/1.jpg" alt="Main Photo"></div>
+            <div id="photo"><img src="img/1.jpg" alt="Main Photo" id="slide"></div>
             <div id="thumb_1" class="thumbnail"><img src="img/thumb/1.jpg" alt="Cat"></div>
             <div id="thumb_2" class="thumbnail"><img src="img/thumb/2.jpg" alt="Cat in Sink"></div>
             <div id="thumb_3" class="thumbnail"><img src="img/thumb/3.jpg" alt="Sailboat"></div>
@@ -18,7 +18,24 @@
 
         <script type="text/javascript">
         $(document).ready(function(){
-
+            $("#thumb_1").click(function(){
+                $("#slide").attr('src','img/1.jpg')
+            })
+            $("#thumb_2").click(function(){
+                $("#slide").attr('src','img/2.jpg')
+            })
+            $("#thumb_3").click(function(){
+                $("#slide").attr('src','img/3.jpg')
+            })
+            $("#thumb_4").click(function(){
+                $("#slide").attr('src','img/4.jpg')
+            })
+            $("#thumb_5").click(function(){
+                $("#slide").attr('src','img/5.jpg')
+            })
+            $("#thumb_6").click(function(){
+                $("#slide").attr('src','img/6.jpg')
+            })
         })
         </script>
 
