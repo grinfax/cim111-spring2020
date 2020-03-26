@@ -5,11 +5,12 @@
     padding: 30px;
     width: 30%;
     /* the transition property animates when you add a class */
-    /* transition: all 0.5s ease; */
+    transition: all 5s ease;
 }
 
 #myButt {
     margin: 20px;
+    background-color: yellow;
 }
 
 
