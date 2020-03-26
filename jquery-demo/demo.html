@@ -8,22 +8,31 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        <div class="demobox">
-            Hello World
-        </div>
-        <button id="myButt">Click me!</button>
+            <img src="images/ducky.jpg" alt="Ducky" class="ducky" width="300">
+        <button id="makeChubby">Fadein!</button>
+        <button id="makeCircle">Fadeout!</button>
 
 
         <script type="text/javascript">
             //javascript code
             $(document).ready(function() {
-                $("#myButt").mousedown(function(){
-                    $(".demobox").css("background-color", "pink");
+
+                $("#makeChubby").click(function(){
+                    $(".ducky").fadeIn(1000);
                 })
 
-                $("#myButt").mouseup(function(){
-                    $(".demobox").css("background-color", "green");
+                $("#makeCircle").click(function(){
+                    $(".ducky").fadeOut(1000);
                 })
+
+                //example below is css.html
+                // $("#myButt").mousedown(function(){
+                //     $(".demobox").css("background-color", "pink");
+                // })
+
+                // $("#myButt").mouseup(function(){
+                //     $(".demobox").css("background-color", "green");
+                // })
             })
         </script>
     </body>
