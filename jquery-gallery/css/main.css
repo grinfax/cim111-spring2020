@@ -1,0 +1,51 @@
+
+
+.photo {
+  grid-area: photo;
+}
+
+.thumbnail {
+  width: 100px;
+  background: #ccc;
+}
+
+img {
+  max-width: 100%;
+}
+
+#thumb_1 {
+  grid-area: t1;
+  padding: 5px;
+}
+#thumb_2 {
+  grid-area: t2;
+  padding: 5px;
+}
+#thumb_3 {
+  grid-area: t3;
+  padding: 5px;
+}
+#thumb_4 {
+  grid-area: t4;
+  padding: 5px;
+}
+#thumb_5 {
+  grid-area: t5;
+  padding: 5px;
+}
+#thumb_6 {
+  grid-area: t6;
+  padding: 5px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  align-items: center;	
+  grid-template-areas:
+  "photo photo photo photo photo photo"
+  "t1 t2 t3 t4 t5 t6";
+  width: 800px;
+  margin: auto;
+}
