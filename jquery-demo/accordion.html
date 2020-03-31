@@ -13,7 +13,10 @@ Jquery Accordion Example</p>
     <div class="accordion">
 
     <h2><a href="">Panel A</a></h2>
-    <p>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</p>
+    <p>
+     <img src="images/1.jpg" class="myimg">
+     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel.
+    </p>
 
     <h2><a href="">Panel B</a></h2>
     <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
@@ -27,7 +30,7 @@ Jquery Accordion Example</p>
     </p>
     <script type="text/javascript">
         $(document).ready(function(){
-          var allPanels = $('.accordion > p').hide();
+          var allPanels = $('.accordion p').hide();
 
           $('.accordion > h2 > a').click(function() {
             allPanels.slideUp();

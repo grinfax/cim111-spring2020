@@ -33,6 +33,7 @@ body {
   background: #efefef;
   margin-top: 0;
   margin-bottom: 0;
+  display: flow-root;
 }
 .accordion p:last-of-type {
   border-top: 1px solid white;
@@ -43,3 +44,5 @@ body {
 a {
   text-decoration: none;
 }
+
+.myimg {float: right;}
